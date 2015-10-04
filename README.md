@@ -257,7 +257,9 @@ The parser support the most flexible syntax than is HTML5 with some Templix addo
 - track
 - wbr
 
- You can found how the self-closed implemation is done by taking a look at "*Wild\\Templix\\MarkupHtml5*" namespace in "*surikat/php/Wild/Templix/MarkupHtml5*" directory.Markup Object Methods
+ You can found how the self-closed implemation is done by taking a look at "*Wild\\Templix\\MarkupHtml5*" namespace in "*surikat/php/Wild/Templix/MarkupHtml5*" directory.
+ 
+Markup Object Methods
 ---------------------
 
  Markups object will be called node in following documtentation.
