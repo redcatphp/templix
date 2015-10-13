@@ -606,9 +606,7 @@ class Markup implements \ArrayAccess,\IteratorAggregate{
 					$str .= ' '.$k.'="'.$v.'"';
 				}
 			}
-			if($this->selfClosed&&$this->templix&&$this->templix->isXhtml)
-				$str .= '></'.$this->nodeName;
-			elseif($this->selfClosed>1)
+			if($this->selfClosed>1||($this->selfClosed&&$this->templix&&$this->templix->isXhtml))
 				$str .= ' /';
 			$str .= '>';
 			if($this->spaceAfterOpen)
@@ -644,9 +642,7 @@ class Markup implements \ArrayAccess,\IteratorAggregate{
 					$str .= ' '.$k.'="'.$v.'"';
 				}
 			}
-			if($this->selfClosed&&$this->templix&&$this->templix->isXhtml)
-				$str .= '></'.$this->nodeName;
-			elseif($this->selfClosed>1)
+			if($this->selfClosed>1||($this->selfClosed&&$this->templix&&$this->templix->isXhtml))
 				$str .= ' /';
 			$str .= '>';
 			if($this->spaceAfterOpen)
