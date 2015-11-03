@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\CssSelector\Filter;
-use Wild\Templix\CssSelector\Filter\Pseudo;
+namespace RedCat\Templix\CssSelector\Filter;
+use RedCat\Templix\CssSelector\Filter\Pseudo;
 class PseudoEq extends Pseudo{
 	private $_position;
 	function __construct($input){

@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix;
-use Wild\Templix\Markup;
+namespace RedCat\Templix;
+use RedCat\Templix\Markup;
 class Group extends Markup{
 	protected $hiddenWrap = true;
 	function addToGroup($node){

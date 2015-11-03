@@ -1,5 +1,5 @@
 <?php
-namespace Wild\Templix\CssSelector\Filter;
+namespace RedCat\Templix\CssSelector\Filter;
 class Id implements FilterInterface{
 	private $_id;
 	function __construct($id){

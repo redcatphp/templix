@@ -1,5 +1,5 @@
 <?php
-namespace Wild\Templix;
+namespace RedCat\Templix;
 class BeautifyHtml{
 	protected $tagsToIgnore = ['script','textarea','pre','style','code',];
 	protected $tagsToIgnoreBlocks = [];

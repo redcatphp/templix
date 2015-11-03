@@ -1,3 +1,3 @@
 <?php
-namespace Wild\Templix\MarkupX;
-class Append extends \Wild\Templix\CallerMarkup {}
+namespace RedCat\Templix\MarkupX;
+class Append extends \RedCat\Templix\CallerMarkup {}

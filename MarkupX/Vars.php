@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\MarkupX;
-class Vars extends \Wild\Templix\Markup{
+namespace RedCat\Templix\MarkupX;
+class Vars extends \RedCat\Templix\Markup{
 	protected $hiddenWrap = true;
 	function load(){
 		if(!$this->templix)

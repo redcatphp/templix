@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix;
-use Wild\Templix\MarkupX\Apply;
+namespace RedCat\Templix;
+use RedCat\Templix\MarkupX\Apply;
 class Markup implements \ArrayAccess,\IteratorAggregate{	
 	//Parser
 	const STATE_PROLOG_EXCLAMATION = 1;

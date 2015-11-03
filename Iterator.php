@@ -1,5 +1,5 @@
 <?php
-namespace Wild\Templix;
+namespace RedCat\Templix;
 use ArrayIterator;
 class Iterator implements \ArrayAccess,\IteratorAggregate{
 	private $__dataNodes;

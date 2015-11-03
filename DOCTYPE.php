@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix;
-use Wild\Templix\Markup;
+namespace RedCat\Templix;
+use RedCat\Templix\Markup;
 class DOCTYPE extends Markup{
 	protected $selfClosed = true;
 	protected $hiddenWrap = true;

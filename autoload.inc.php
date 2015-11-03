@@ -1,5 +1,5 @@
 <?php
-namespace Wild\Templix;
+namespace RedCat\Templix;
 function autoload($class){
 	if(strpos($class,__NAMESPACE__.'\\')===0){
 		$file = __DIR__.'/'.str_replace('\\','/',substr($class,strlen(__NAMESPACE__)+1)).'.php';

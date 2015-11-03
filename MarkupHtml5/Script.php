@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\MarkupHtml5;
-class Script extends \Wild\Templix\Markup{
+namespace RedCat\Templix\MarkupHtml5;
+class Script extends \RedCat\Templix\Markup{
 	protected $noParseContent = true;
 	function load(){
 		if(!isset($this->type))

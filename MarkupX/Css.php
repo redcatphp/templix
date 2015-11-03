@@ -1,7 +1,7 @@
 <?php
-namespace Wild\Templix\MarkupX; 
-use Wild\Templix\CallerMarkup;
-class Css extends \Wild\Templix\CallerMarkup{
+namespace RedCat\Templix\MarkupX; 
+use RedCat\Templix\CallerMarkup;
+class Css extends \RedCat\Templix\CallerMarkup{
 	protected $selfClosed = true;
 	protected $hiddenWrap = true;
 	protected $callback = 'addCssLink';

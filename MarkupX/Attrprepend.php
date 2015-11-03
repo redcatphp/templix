@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\MarkupX;
-class Attrprepend extends \Wild\Templix\CallerMarkup {
+namespace RedCat\Templix\MarkupX;
+class Attrprepend extends \RedCat\Templix\CallerMarkup {
 	protected $selfClosed = true;
 	function extendLoad(){
 		if($extend = $this->closest('extend'))

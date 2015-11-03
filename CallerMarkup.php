@@ -1,5 +1,5 @@
 <?php
-namespace Wild\Templix;
+namespace RedCat\Templix;
 abstract class CallerMarkup extends Markup{
 	protected $hiddenWrap = true;
 	protected $callback;

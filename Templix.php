@@ -6,9 +6,9 @@
  * @version 1.6
  * @link http://github.com/surikat/Templix/
  * @author Jo Surikat <jo@surikat.pro>
- * @website http://wildsurikat.com
+ * @website http://redcatphp.com
  */
-namespace Wild\Templix;
+namespace RedCat\Templix;
 class Templix implements \ArrayAccess {
 	
 	private $foundPath;

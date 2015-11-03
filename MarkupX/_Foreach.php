@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\MarkupX; 
-class _Foreach extends \Wild\Templix\Markup{
+namespace RedCat\Templix\MarkupX; 
+class _Foreach extends \RedCat\Templix\Markup{
 	protected $hiddenWrap = true;
 	function getForeach(){
 		$this->remapAttr('e');

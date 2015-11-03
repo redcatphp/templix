@@ -1,5 +1,5 @@
 <?php
-namespace Wild\Templix\MarkupX;
-class Remove extends \Wild\Templix\CallerMarkup {
+namespace RedCat\Templix\MarkupX;
+class Remove extends \RedCat\Templix\CallerMarkup {
 	protected $selfClosed = true;
 }

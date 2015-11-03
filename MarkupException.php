@@ -1,3 +1,3 @@
 <?php
-namespace Wild\Templix;
+namespace RedCat\Templix;
 class MarkupException extends \Exception{}

@@ -1,3 +1,3 @@
 <?php
-namespace Wild\Templix\MarkupX;
-class Merge extends \Wild\Templix\CallerMarkup {}
+namespace RedCat\Templix\MarkupX;
+class Merge extends \RedCat\Templix\CallerMarkup {}

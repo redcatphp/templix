@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\MarkupX;
-use Wild\Templix\MarkupHtml5\Img as MarkupHtml5_Img;
+namespace RedCat\Templix\MarkupX;
+use RedCat\Templix\MarkupHtml5\Img as MarkupHtml5_Img;
 class Img extends MarkupHtml5_Img{
 	function load(){
 		if($this->src&&strpos($this->src,'://')===false){

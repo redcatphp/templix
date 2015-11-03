@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\MarkupX; 
-class _If extends \Wild\Templix\Markup{
+namespace RedCat\Templix\MarkupX; 
+class _If extends \RedCat\Templix\Markup{
 	protected $hiddenWrap = true;
 	function load(){
 		array_unshift($this->head,'<?php if('.$this->evalSource()."){?>\n");

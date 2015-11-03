@@ -1,5 +1,5 @@
 <?php
-namespace Wild\Templix\CssSelector\Model;
+namespace RedCat\Templix\CssSelector\Model;
 class Selector{
 	private $_factors = [];
 	function addFactor($factor){

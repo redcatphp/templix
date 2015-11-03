@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\MarkupX; 
-class Noparse extends \Wild\Templix\Markup{
+namespace RedCat\Templix\MarkupX; 
+class Noparse extends \RedCat\Templix\Markup{
 	protected $hiddenWrap = true;
 	protected $noParseContent = true;
 }

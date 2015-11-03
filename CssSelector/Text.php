@@ -1,5 +1,5 @@
 <?php
-namespace Wild\Templix\CssSelector;
+namespace RedCat\Templix\CssSelector;
 abstract class Text{
 	static function isEmpty($str){
 		return $str === null || is_string($str) && strlen($str) == 0;

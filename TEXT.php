@@ -1,5 +1,5 @@
 <?php
-namespace Wild\Templix;
+namespace RedCat\Templix;
 class TEXT extends Markup{
 	var $nodeName = 'TEXT';
 	protected $hiddenWrap = true;

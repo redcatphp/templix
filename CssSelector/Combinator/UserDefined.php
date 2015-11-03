@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\CssSelector\Combinator;
-use Wild\Templix\CssSelector\CssParserException;
+namespace RedCat\Templix\CssSelector\Combinator;
+use RedCat\Templix\CssSelector\CssParserException;
 class UserDefined implements CombinatorInterface{
 	private $_userDefFunction;
 	function __construct($userDefFunction){

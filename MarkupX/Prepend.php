@@ -1,3 +1,3 @@
 <?php
-namespace Wild\Templix\MarkupX;
-class Prepend extends \Wild\Templix\CallerMarkup{}
+namespace RedCat\Templix\MarkupX;
+class Prepend extends \RedCat\Templix\CallerMarkup{}

@@ -1,3 +1,3 @@
 <?php
-namespace Wild\Templix\MarkupX;
-class Premerge extends \Wild\Templix\CallerMarkup{}
+namespace RedCat\Templix\MarkupX;
+class Premerge extends \RedCat\Templix\CallerMarkup{}

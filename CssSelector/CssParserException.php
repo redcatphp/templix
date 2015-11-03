@@ -1,4 +1,4 @@
 <?php
-namespace Wild\Templix\CssSelector;
+namespace RedCat\Templix\CssSelector;
 use Exception;
 class CssParserException extends Exception{}

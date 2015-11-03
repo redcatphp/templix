@@ -1,5 +1,5 @@
 <?php
-namespace Wild\Templix\CssSelector\Filter;
+namespace RedCat\Templix\CssSelector\Filter;
 class Attr implements FilterInterface{
 	const EQUAL_SELECTOR = '=';
 	const NOT_EQUAL_SELECTOR = '!=';

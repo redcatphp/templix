@@ -1,7 +1,7 @@
 <?php
-namespace Wild\Templix\CssSelector;
-use Wild\Templix\CssSelector\TextParserException;
-use Wild\Templix\CssSelector\TextTokenizer;
+namespace RedCat\Templix\CssSelector;
+use RedCat\Templix\CssSelector\TextParserException;
+use RedCat\Templix\CssSelector\TextTokenizer;
 abstract class TextParser extends TextTokenizer{
 	const UNGREEDY = 0x4;
 	private $_target;

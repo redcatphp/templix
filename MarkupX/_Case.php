@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\MarkupX; 
-class _Case extends \Wild\Templix\Markup {
+namespace RedCat\Templix\MarkupX; 
+class _Case extends \RedCat\Templix\Markup {
 	protected $hiddenWrap = true;
 	function load(){
 		$this->remapAttr('e');

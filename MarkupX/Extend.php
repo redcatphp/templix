@@ -1,9 +1,9 @@
 <?php
-namespace Wild\Templix\MarkupX; 
-use Wild\Templix\COMMENT;
-use Wild\Templix\TEXT;
-use Wild\Templix\PHP;
-class Extend extends \Wild\Templix\Markup{
+namespace RedCat\Templix\MarkupX; 
+use RedCat\Templix\COMMENT;
+use RedCat\Templix\TEXT;
+use RedCat\Templix\PHP;
+class Extend extends \RedCat\Templix\Markup{
 	protected $hiddenWrap = true;
 	var $_extender;
 	var $_extended;

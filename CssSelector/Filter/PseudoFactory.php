@@ -1,8 +1,8 @@
 <?php
-namespace Wild\Templix\CssSelector\Filter;
+namespace RedCat\Templix\CssSelector\Filter;
 class PseudoFactory{
 	static function getInstance($classname, $input = "", $userDefFunction = null){
-		$fullname = "Wild\\Templix\\CssSelector\\Filter\\".$classname;
+		$fullname = "RedCat\\Templix\\CssSelector\\Filter\\".$classname;
 		return new $fullname($input, $userDefFunction);
 	}
 }

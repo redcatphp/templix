@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\MarkupX;
-class Attr extends \Wild\Templix\CallerMarkup {
+namespace RedCat\Templix\MarkupX;
+class Attr extends \RedCat\Templix\CallerMarkup {
 	protected $selfClosed = true;
 	function extendLoad(){
 		if($extend = $this->closest('extend'))

@@ -1,4 +1,4 @@
 <?php
-namespace Wild\Templix;
-use Wild\Templix\CssSelector\CssParser;
+namespace RedCat\Templix;
+use RedCat\Templix\CssSelector\CssParser;
 class CssSelector extends CssParser{}

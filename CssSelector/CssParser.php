@@ -1,17 +1,17 @@
 <?php
-namespace Wild\Templix\CssSelector;
+namespace RedCat\Templix\CssSelector;
 use ArrayObject;
-use Wild\Templix\CssSelector\Combinator\Factory;
-use Wild\Templix\CssSelector\Filter\Attr;
-use Wild\Templix\CssSelector\Filter\_Class;
-use Wild\Templix\CssSelector\Filter\Id;
-use Wild\Templix\CssSelector\Filter\Pseudo;
-use Wild\Templix\CssSelector\Filter\PseudoFactory;
-use Wild\Templix\CssSelector\Model\Element;
-use Wild\Templix\CssSelector\Model\Factor;
-use Wild\Templix\CssSelector\Model\Selector;
-use Wild\Templix\CssSelector\TextParserException;
-use Wild\Templix\CssSelector\TextParser;
+use RedCat\Templix\CssSelector\Combinator\Factory;
+use RedCat\Templix\CssSelector\Filter\Attr;
+use RedCat\Templix\CssSelector\Filter\_Class;
+use RedCat\Templix\CssSelector\Filter\Id;
+use RedCat\Templix\CssSelector\Filter\Pseudo;
+use RedCat\Templix\CssSelector\Filter\PseudoFactory;
+use RedCat\Templix\CssSelector\Model\Element;
+use RedCat\Templix\CssSelector\Model\Factor;
+use RedCat\Templix\CssSelector\Model\Selector;
+use RedCat\Templix\CssSelector\TextParserException;
+use RedCat\Templix\CssSelector\TextParser;
 /**
  * selectorList			  = selector {"," selector}
  * selector				  = factor {factor}

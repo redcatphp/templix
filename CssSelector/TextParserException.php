@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\CssSelector;
-use Wild\Templix\CssSelector\TextParser;
+namespace RedCat\Templix\CssSelector;
+use RedCat\Templix\CssSelector\TextParser;
 use Exception;
 class TextParserException extends Exception{
 	private $_parser;

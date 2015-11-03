@@ -1,5 +1,5 @@
 <?php
-namespace Wild\Templix\CssSelector\Model;
+namespace RedCat\Templix\CssSelector\Model;
 class Element{
 	private $_tagName;
 	private $_filters;

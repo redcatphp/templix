@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\MarkupX; 
-class T extends \Wild\Templix\Markup{
+namespace RedCat\Templix\MarkupX; 
+class T extends \RedCat\Templix\Markup{
 	function load(){
 		$this->attr('tmp-wrap',1);
 		if(isset($this->metaAttribution[0]))

@@ -1,5 +1,5 @@
 <?php
-namespace Wild\Templix\CssSelector\Combinator;
+namespace RedCat\Templix\CssSelector\Combinator;
 class Child implements CombinatorInterface{
 	function filter($node, $tagname){
 		$nodes = [];

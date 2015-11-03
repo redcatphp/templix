@@ -1,5 +1,5 @@
 <?php
-namespace Wild\Templix\CssSelector\Combinator;
+namespace RedCat\Templix\CssSelector\Combinator;
 class General implements CombinatorInterface{
 	function filter($node, $tagname){
 		$ret = [];

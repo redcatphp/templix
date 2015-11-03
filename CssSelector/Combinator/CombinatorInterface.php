@@ -1,5 +1,5 @@
 <?php
-namespace Wild\Templix\CssSelector\Combinator;
+namespace RedCat\Templix\CssSelector\Combinator;
 interface CombinatorInterface{
 	function filter($node, $tagname);
 }

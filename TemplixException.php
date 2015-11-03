@@ -1,3 +1,3 @@
 <?php
-namespace Wild\Templix;
+namespace RedCat\Templix;
 class TemplixException extends \Exception{}

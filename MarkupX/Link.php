@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\MarkupX;
-class Link extends \Wild\Templix\MarkupHtml5\Link{
+namespace RedCat\Templix\MarkupX;
+class Link extends \RedCat\Templix\MarkupHtml5\Link{
 	function load(){
 		if(!$this->templix)
 			return;

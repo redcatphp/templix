@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\MarkupX; 
-class Code extends \Wild\Templix\Markup{
+namespace RedCat\Templix\MarkupX; 
+class Code extends \RedCat\Templix\Markup{
 	protected $noParseContent = true;
 	function load(){
 		if($this->attr('tmp-once'))

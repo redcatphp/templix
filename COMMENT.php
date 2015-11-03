@@ -1,5 +1,5 @@
 <?php
-namespace Wild\Templix; 
+namespace RedCat\Templix; 
 class COMMENT extends Markup{
 	protected $hiddenWrap = true;
 	private $contentText = '';

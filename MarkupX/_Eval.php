@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\MarkupX;
-class _Eval extends \Wild\Templix\CallerMarkup{
+namespace RedCat\Templix\MarkupX;
+class _Eval extends \RedCat\Templix\CallerMarkup{
 	function load(){
 		if(!$this->after)
 			$this->replaceWithEvalued();

@@ -1,6 +1,6 @@
 <?php
-namespace Wild\Templix\MarkupX; 
-class Js extends \Wild\Templix\CallerMarkup{
+namespace RedCat\Templix\MarkupX; 
+class Js extends \RedCat\Templix\CallerMarkup{
 	protected $selfClosed = true;
 	protected $hiddenWrap = true;
 	protected $callback = 'addJsScript';

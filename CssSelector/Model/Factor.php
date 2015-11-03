@@ -1,5 +1,5 @@
 <?php
-namespace Wild\Templix\CssSelector\Model;
+namespace RedCat\Templix\CssSelector\Model;
 class Factor{
 	const DESCENDANT_OPERATOR = "";
 	const CHILD_OPERATOR = ">";
