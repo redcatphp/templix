@@ -5,111 +5,111 @@
 Features
 --------
 
-- [recursive extend](http://wildsurikat.com/templix#plugin-extend)
+- [recursive extend](http://redcatphp.com/templix#plugin-extend)
 - [CSS3 Selectors](http://www.w3.org/TR/css3-selectors/) ([jQuery](https://jquery.com)/[sizzle](http://sizzlejs.com) like) to work on DOM at compilation time
 - PHP compliant
-- [onCompile binder](http://wildsurikat.com/templix#on-compile)
+- [onCompile binder](http://redcatphp.com/templix#on-compile)
 - PHP short-open-tag syntax support even if not enable in php.ini
 - PHP syntax elements ported to HTML5
-- [HTML5/XML syntax](http://wildsurikat.com/templix#html5-plugins)
-- [extended Templix syntax](http://wildsurikat.com/templix#templix-syntax)
+- [HTML5/XML syntax](http://redcatphp.com/templix#html5-plugins)
+- [extended Templix syntax](http://redcatphp.com/templix#templix-syntax)
 - As fast as simple include when compiled
-- [Possibility to build your own markup based logic language](http://wildsurikat.com/templix#diy-plugins)
-- [Markup Object Methods](http://wildsurikat.com/templix#markup-methods)- [closest](http://wildsurikat.com/templix#method-closest)
-- [searchNode](http://wildsurikat.com/templix#method-searchnode)
-- [match](http://wildsurikat.com/templix#method-match)
-- [find](http://wildsurikat.com/templix#method-find)
-- [children](http://wildsurikat.com/templix#method-children)
-- [merge](http://wildsurikat.com/templix#method-merge)
-- [premerge](http://wildsurikat.com/templix#method-premerge)
-- [submerge](http://wildsurikat.com/templix#method-submerge)
-- [isSameNode](http://wildsurikat.com/templix#method-issamenode)
-- [getAttributes](http://wildsurikat.com/templix#method-getattributes)
-- [hasAttribute](http://wildsurikat.com/templix#method-hasattribute)
-- [getElementsByTagName](http://wildsurikat.com/templix#method-getelementsbytagname)
-- [write](http://wildsurikat.com/templix#method-write)
-- [append](http://wildsurikat.com/templix#method-append)
-- [prepend](http://wildsurikat.com/templix#method-prepend)
-- [each](http://wildsurikat.com/templix#method-each)
-- [replaceWith](http://wildsurikat.com/templix#method-replacewith)
-- [remove](http://wildsurikat.com/templix#method-remove)
-- [applyFile](http://wildsurikat.com/templix#method-applyfile)
-- [before](http://wildsurikat.com/templix#method-before)
-- [after](http://wildsurikat.com/templix#method-after)
-- [getIndex](http://wildsurikat.com/templix#method-getindex)
-- [getInnerMarkups](http://wildsurikat.com/templix#method-getinnermarkups)
-- [getInner](http://wildsurikat.com/templix#method-getinner)
-- [\_\_toString](http://wildsurikat.com/templix#method-tostring)
-- [clear](http://wildsurikat.com/templix#method-clear)
-- [clearInner](http://wildsurikat.com/templix#method-clearinner)
-- [head](http://wildsurikat.com/templix#method-head)
-- [foot](http://wildsurikat.com/templix#method-foot)
-- [innerHead](http://wildsurikat.com/templix#method-innerhead)
-- [innerFoot](http://wildsurikat.com/templix#method-innerfoot)
-- [attr](http://wildsurikat.com/templix#method-attr)
-- [tmpAttr](http://wildsurikat.com/templix#method-tmpattr)
-- [removeAttr](http://wildsurikat.com/templix#method-removeattr)
-- [remapAttr](http://wildsurikat.com/templix#method-remapattr)
-- [data](http://wildsurikat.com/templix#method-data)
-- [css](http://wildsurikat.com/templix#method-css)
-- [removeClass](http://wildsurikat.com/templix#method-removeclass)
-- [addClass](http://wildsurikat.com/templix#method-addclass)
-- [wrap](http://wildsurikat.com/templix#method-wrap)
-- [unwrap](http://wildsurikat.com/templix#method-unwrap)
-- [createChild](http://wildsurikat.com/templix#method-createchild)
-- [recursive](http://wildsurikat.com/templix#method-recursive)
-- [arecursive](http://wildsurikat.com/templix#method-arecursive)
-- [getIterator magic](http://wildsurikat.com/templix#method-getiterator)
-- [offsetGet magic](http://wildsurikat.com/templix#method-offsetget)
-- [offsetSet magic](http://wildsurikat.com/templix#method-offsetset)
-- [offsetUnset magic](http://wildsurikat.com/templix#method-offsetunset)
-- [offsetExists magic](http://wildsurikat.com/templix#method-offsetexists)
-- [\_\_get magic](http://wildsurikat.com/templix#method-__get)
-- [\_\_set magic](http://wildsurikat.com/templix#method-__set)
-- [\_\_isset magic](http://wildsurikat.com/templix#method-__isset)
-- [\_\_unset magic](http://wildsurikat.com/templix#method-__unset)
-- [\_\_invoke magic](http://wildsurikat.com/templix#method-__invoke)
-- [Attribute Plugins](http://wildsurikat.com/templix#attribute-plugins)- [vars](http://wildsurikat.com/templix#attr-vars)
-- [cacheSync](http://wildsurikat.com/templix#attr-cachesync)
-- [cacheStatic](http://wildsurikat.com/templix#attr-cachestatic)
-- [Markup Plugins](http://wildsurikat.com/templix#native-plugins)- [after](http://wildsurikat.com/templix#plugin-after)
-- [append](http://wildsurikat.com/templix#plugin-append)
-- [apply](http://wildsurikat.com/templix#plugin-apply)
-- [attr](http://wildsurikat.com/templix#plugin-attr)
-- [attrappend](http://wildsurikat.com/templix#plugin-attrappend)
-- [attrprepend](http://wildsurikat.com/templix#plugin-attrprepend)
-- [before](http://wildsurikat.com/templix#plugin-before)
-- [case](http://wildsurikat.com/templix#plugin-case)
-- [code](http://wildsurikat.com/templix#plugin-code)
-- [css](http://wildsurikat.com/templix#plugin-css)
-- [else](http://wildsurikat.com/templix#plugin-else)
-- [elseif](http://wildsurikat.com/templix#plugin-elseif)
-- [end](http://wildsurikat.com/templix#plugin-end)
-- [eval](http://wildsurikat.com/templix#plugin-eval)
-- [extend](http://wildsurikat.com/templix#plugin-extend)
-- [for](http://wildsurikat.com/templix#plugin-for)
-- [foreach](http://wildsurikat.com/templix#plugin-foreach)
-- [if](http://wildsurikat.com/templix#plugin-if)
-- [img](http://wildsurikat.com/templix#plugin-img)
-- [include](http://wildsurikat.com/templix#plugin-include)
-- [incorpore](http://wildsurikat.com/templix#plugin-incorpore)
-- [js](http://wildsurikat.com/templix#plugin-js)
-- [link](http://wildsurikat.com/templix#plugin-link)
-- [merge](http://wildsurikat.com/templix#plugin-merge)
-- [premerge](http://wildsurikat.com/templix#plugin-premerge)
-- [submerge](http://wildsurikat.com/templix#plugin-submerge)
-- [noparse](http://wildsurikat.com/templix#plugin-noparse)
-- [pre](http://wildsurikat.com/templix#plugin-pre)
-- [prepend](http://wildsurikat.com/templix#plugin-prepend)
-- [remove](http://wildsurikat.com/templix#plugin-remove)
-- [replace](http://wildsurikat.com/templix#plugin-replace)
-- [return](http://wildsurikat.com/templix#plugin-return)
-- [script](http://wildsurikat.com/templix#plugin-script)
-- [switch](http://wildsurikat.com/templix#plugin-switch)
-- [t](http://wildsurikat.com/templix#plugin-t)
-- [var](http://wildsurikat.com/templix#plugin-var)
-- [vars](http://wildsurikat.com/templix#plugin-vars)
-- [write](http://wildsurikat.com/templix#plugin-write)
+- [Possibility to build your own markup based logic language](http://redcatphp.com/templix#diy-plugins)
+- [Markup Object Methods](http://redcatphp.com/templix#markup-methods)- [closest](http://redcatphp.com/templix#method-closest)
+- [searchNode](http://redcatphp.com/templix#method-searchnode)
+- [match](http://redcatphp.com/templix#method-match)
+- [find](http://redcatphp.com/templix#method-find)
+- [children](http://redcatphp.com/templix#method-children)
+- [merge](http://redcatphp.com/templix#method-merge)
+- [premerge](http://redcatphp.com/templix#method-premerge)
+- [submerge](http://redcatphp.com/templix#method-submerge)
+- [isSameNode](http://redcatphp.com/templix#method-issamenode)
+- [getAttributes](http://redcatphp.com/templix#method-getattributes)
+- [hasAttribute](http://redcatphp.com/templix#method-hasattribute)
+- [getElementsByTagName](http://redcatphp.com/templix#method-getelementsbytagname)
+- [write](http://redcatphp.com/templix#method-write)
+- [append](http://redcatphp.com/templix#method-append)
+- [prepend](http://redcatphp.com/templix#method-prepend)
+- [each](http://redcatphp.com/templix#method-each)
+- [replaceWith](http://redcatphp.com/templix#method-replacewith)
+- [remove](http://redcatphp.com/templix#method-remove)
+- [applyFile](http://redcatphp.com/templix#method-applyfile)
+- [before](http://redcatphp.com/templix#method-before)
+- [after](http://redcatphp.com/templix#method-after)
+- [getIndex](http://redcatphp.com/templix#method-getindex)
+- [getInnerMarkups](http://redcatphp.com/templix#method-getinnermarkups)
+- [getInner](http://redcatphp.com/templix#method-getinner)
+- [\_\_toString](http://redcatphp.com/templix#method-tostring)
+- [clear](http://redcatphp.com/templix#method-clear)
+- [clearInner](http://redcatphp.com/templix#method-clearinner)
+- [head](http://redcatphp.com/templix#method-head)
+- [foot](http://redcatphp.com/templix#method-foot)
+- [innerHead](http://redcatphp.com/templix#method-innerhead)
+- [innerFoot](http://redcatphp.com/templix#method-innerfoot)
+- [attr](http://redcatphp.com/templix#method-attr)
+- [tmpAttr](http://redcatphp.com/templix#method-tmpattr)
+- [removeAttr](http://redcatphp.com/templix#method-removeattr)
+- [remapAttr](http://redcatphp.com/templix#method-remapattr)
+- [data](http://redcatphp.com/templix#method-data)
+- [css](http://redcatphp.com/templix#method-css)
+- [removeClass](http://redcatphp.com/templix#method-removeclass)
+- [addClass](http://redcatphp.com/templix#method-addclass)
+- [wrap](http://redcatphp.com/templix#method-wrap)
+- [unwrap](http://redcatphp.com/templix#method-unwrap)
+- [createChild](http://redcatphp.com/templix#method-createchild)
+- [recursive](http://redcatphp.com/templix#method-recursive)
+- [arecursive](http://redcatphp.com/templix#method-arecursive)
+- [getIterator magic](http://redcatphp.com/templix#method-getiterator)
+- [offsetGet magic](http://redcatphp.com/templix#method-offsetget)
+- [offsetSet magic](http://redcatphp.com/templix#method-offsetset)
+- [offsetUnset magic](http://redcatphp.com/templix#method-offsetunset)
+- [offsetExists magic](http://redcatphp.com/templix#method-offsetexists)
+- [\_\_get magic](http://redcatphp.com/templix#method-__get)
+- [\_\_set magic](http://redcatphp.com/templix#method-__set)
+- [\_\_isset magic](http://redcatphp.com/templix#method-__isset)
+- [\_\_unset magic](http://redcatphp.com/templix#method-__unset)
+- [\_\_invoke magic](http://redcatphp.com/templix#method-__invoke)
+- [Attribute Plugins](http://redcatphp.com/templix#attribute-plugins)- [vars](http://redcatphp.com/templix#attr-vars)
+- [cacheSync](http://redcatphp.com/templix#attr-cachesync)
+- [cacheStatic](http://redcatphp.com/templix#attr-cachestatic)
+- [Markup Plugins](http://redcatphp.com/templix#native-plugins)- [after](http://redcatphp.com/templix#plugin-after)
+- [append](http://redcatphp.com/templix#plugin-append)
+- [apply](http://redcatphp.com/templix#plugin-apply)
+- [attr](http://redcatphp.com/templix#plugin-attr)
+- [attrappend](http://redcatphp.com/templix#plugin-attrappend)
+- [attrprepend](http://redcatphp.com/templix#plugin-attrprepend)
+- [before](http://redcatphp.com/templix#plugin-before)
+- [case](http://redcatphp.com/templix#plugin-case)
+- [code](http://redcatphp.com/templix#plugin-code)
+- [css](http://redcatphp.com/templix#plugin-css)
+- [else](http://redcatphp.com/templix#plugin-else)
+- [elseif](http://redcatphp.com/templix#plugin-elseif)
+- [end](http://redcatphp.com/templix#plugin-end)
+- [eval](http://redcatphp.com/templix#plugin-eval)
+- [extend](http://redcatphp.com/templix#plugin-extend)
+- [for](http://redcatphp.com/templix#plugin-for)
+- [foreach](http://redcatphp.com/templix#plugin-foreach)
+- [if](http://redcatphp.com/templix#plugin-if)
+- [img](http://redcatphp.com/templix#plugin-img)
+- [include](http://redcatphp.com/templix#plugin-include)
+- [incorpore](http://redcatphp.com/templix#plugin-incorpore)
+- [js](http://redcatphp.com/templix#plugin-js)
+- [link](http://redcatphp.com/templix#plugin-link)
+- [merge](http://redcatphp.com/templix#plugin-merge)
+- [premerge](http://redcatphp.com/templix#plugin-premerge)
+- [submerge](http://redcatphp.com/templix#plugin-submerge)
+- [noparse](http://redcatphp.com/templix#plugin-noparse)
+- [pre](http://redcatphp.com/templix#plugin-pre)
+- [prepend](http://redcatphp.com/templix#plugin-prepend)
+- [remove](http://redcatphp.com/templix#plugin-remove)
+- [replace](http://redcatphp.com/templix#plugin-replace)
+- [return](http://redcatphp.com/templix#plugin-return)
+- [script](http://redcatphp.com/templix#plugin-script)
+- [switch](http://redcatphp.com/templix#plugin-switch)
+- [t](http://redcatphp.com/templix#plugin-t)
+- [var](http://redcatphp.com/templix#plugin-var)
+- [vars](http://redcatphp.com/templix#plugin-vars)
+- [write](http://redcatphp.com/templix#plugin-write)
 
 Templix syntax
 --------------
@@ -177,10 +177,10 @@ $templix->setDirCache('.tmp/templix/cache/'); //by default
 $templix->setDirSync('.tmp/sync/'); //by default  
   
 //set current working directories in order you want templix look for  
-$templix->setDirCwd(['template/','surikat/template/']); //by default  
+$templix->setDirCwd(['template/','redcat/template/']); //by default  
   
 //add directories to stack of current working directories  
-$templix->addDirCwd(['template/','surikat/template/',]);  
+$templix->addDirCwd(['template/','redcat/template/',]);  
   
 //the template file to display on call of $templix->display();  
 $templix->setPath($file);  
@@ -257,7 +257,7 @@ The parser support the most flexible syntax than is HTML5 with some Templix addo
 - track
 - wbr
 
- You can found how the self-closed implemation is done by taking a look at "*Wild\\Templix\\MarkupHtml5*" namespace in "*surikat/php/Wild/Templix/MarkupHtml5*" directory.
+ You can found how the self-closed implemation is done by taking a look at "*RedCat\\Templix\\MarkupHtml5*" namespace in "*redcat/php/RedCat/Templix/MarkupHtml5*" directory.
  
 Markup Object Methods
 ---------------------
@@ -641,7 +641,7 @@ $node->removeAttr('class');
 
  The remapAttr method is used for add a key to a shortcut attribute or shortcut value according to its order in attributes. The first argument specify the key to add and the second argument the index of shortcut, starting with zero. The index is zero by default. 
 ```php
-class Mynode extend \\Wild\\Templix\\Markup{  
+class Mynode extend \\RedCat\\Templix\\Markup{  
     function load(){  
         $this->remapAttr('src');  
         $this->remapAttr('async',1);  
@@ -656,7 +656,7 @@ class Mynode extend \\Wild\\Templix\\Markup{
 ### data
 
  The data method is a getter or setter for accessing meta-data unvisible attributes.   
-Because of extend or apply, the DOM can be re-compiled to string and re-parsed. In this processus, all unvisible meta-data you can add to your object, like with the data method, will be wiped. To work around this behavior use [tmpAttr](http://wildsurikat.com/templix#method-tmpattr) instead of data.   
+Because of extend or apply, the DOM can be re-compiled to string and re-parsed. In this processus, all unvisible meta-data you can add to your object, like with the data method, will be wiped. To work around this behavior use [tmpAttr](http://redcatphp.com/templix#method-tmpattr) instead of data.   
 It will be a getter with one argument and a setter with two arguments. 
 ```php
 $node->data('meta-data',$data);  
@@ -766,14 +766,14 @@ foreach($node as $childNode){
  The offsetSet magic method allow you to work with children nodes like if they were an array of nodes and set a child node like an offset. If the parameter is scalar value it will be converted to a tree of node. 
 ```php
 $node[] = $appendNode;  
-$node[] = '<a href="http://wildsurikat.com">Surikat Framework</a>';  
+$node[] = '<a href="http://redcatphp.com">RedCat Framework</a>';  
 $node[5] = $indexedNode;  
             
 ```
  This is equivalent to: 
 ```php
 $node->append($appendNode);  
-$node->append('<a href="http://wildsurikat.com">Surikat Framework</a>');  
+$node->append('<a href="http://redcatphp.com">RedCat Framework</a>');  
 $node->append($indexedNode,5);  
             
 ```
@@ -981,7 +981,7 @@ $templix->setDirSync('.tmp/sync/'); //by default
 
 #### after
 
- Markup usage of [after method](http://wildsurikat.com/templix#method-after). The after markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will add its content in document just after its selector targeted node(s). 
+ Markup usage of [after method](http://redcatphp.com/templix#method-after). The after markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will add its content in document just after its selector targeted node(s). 
 ```html
 <extend>  
     <after main>  
@@ -997,7 +997,7 @@ $templix->setDirSync('.tmp/sync/'); //by default
 
 #### append
 
- Markup usage of [append method](http://wildsurikat.com/templix#method-append). The append markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will add its content at end inside its selector targeted node(s). 
+ Markup usage of [append method](http://redcatphp.com/templix#method-append). The append markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will add its content at end inside its selector targeted node(s). 
 ```html
 <extend>  
     <append main>  
@@ -1013,7 +1013,7 @@ $templix->setDirSync('.tmp/sync/'); //by default
 
 #### apply
 
- Markup usage of [applyFile method](http://wildsurikat.com/templix#method-applyfile). It's the reversed process of <extend>: the *.tpl* file will be able to use selector markups for work on the content of <apply>. The *.tpl* file is like a kind of application patcher function. 
+ Markup usage of [applyFile method](http://redcatphp.com/templix#method-applyfile). It's the reversed process of <extend>: the *.tpl* file will be able to use selector markups for work on the content of <apply>. The *.tpl* file is like a kind of application patcher function. 
 ```html
 <apply "form-validation.tpl">  
     <form>  
@@ -1048,7 +1048,7 @@ $templix->setDirSync('.tmp/sync/'); //by default
 
 #### attr
 
- Markup usage of [attr method](http://wildsurikat.com/templix#method-attr). The attr markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will set its selector targeted node(s) attributes to its attributes and can also use some special behaviors starting by add or remove like addClass or removeClass. 
+ Markup usage of [attr method](http://redcatphp.com/templix#method-attr). The attr markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will set its selector targeted node(s) attributes to its attributes and can also use some special behaviors starting by add or remove like addClass or removeClass. 
 ```html
 <extend>  
     <attr selector="main > article:eq(0) > img:eq(2)" alt="Name for my image">  
@@ -1083,7 +1083,7 @@ $templix->setDirSync('.tmp/sync/'); //by default
 
 #### before
 
- Markup usage of [before method](http://wildsurikat.com/templix#method-before). The before markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will add its content in document just before its selector targeted node(s). 
+ Markup usage of [before method](http://redcatphp.com/templix#method-before). The before markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will add its content in document just before its selector targeted node(s). 
 ```html
 <extend>  
     <before main>  
@@ -1218,13 +1218,13 @@ $templix['outsideVar'] = true;
 </eval>  
             
 ```
- If the image is found, height and with will be added by the parser (see [img markup](http://wildsurikat.com/templix#plugin-img)).
+ If the image is found, height and with will be added by the parser (see [img markup](http://redcatphp.com/templix#plugin-img)).
 
 #### extend
 
  The extend markup will refer to a wrapper template, usualy in first level is the layout.  
  There can be many extend inside same template and you can extend an allready extended template file recursively.  
- It will suffix file name with "*.xtml*" by default and if it was left empty the default wrapper file will be "*.xtml*". It will contain other specifics elements that will work on DOM like: [write](http://wildsurikat.com/templix#plugin-write), [append](http://wildsurikat.com/templix#plugin-append), [prepend](http://wildsurikat.com/templix#plugin-prepend), [after](http://wildsurikat.com/templix#plugin-replace), [before](http://wildsurikat.com/templix#plugin-replace), [remove](http://wildsurikat.com/templix#plugin-remove), [replace](http://wildsurikat.com/templix#plugin-replace), [merge](http://wildsurikat.com/templix#plugin-merge), [premerge](http://wildsurikat.com/templix#plugin-premerge), [submerge](http://wildsurikat.com/templix#plugin-submerge), [attr](http://wildsurikat.com/templix#plugin-attr), [attrprepend](http://wildsurikat.com/templix#plugin-attrprepend), [attrappend](http://wildsurikat.com/templix#plugin-attrappend), [css](http://wildsurikat.com/templix#plugin-css), [js](http://wildsurikat.com/templix#plugin-js). 
+ It will suffix file name with "*.xtml*" by default and if it was left empty the default wrapper file will be "*.xtml*". It will contain other specifics elements that will work on DOM like: [write](http://redcatphp.com/templix#plugin-write), [append](http://redcatphp.com/templix#plugin-append), [prepend](http://redcatphp.com/templix#plugin-prepend), [after](http://redcatphp.com/templix#plugin-replace), [before](http://redcatphp.com/templix#plugin-replace), [remove](http://redcatphp.com/templix#plugin-remove), [replace](http://redcatphp.com/templix#plugin-replace), [merge](http://redcatphp.com/templix#plugin-merge), [premerge](http://redcatphp.com/templix#plugin-premerge), [submerge](http://redcatphp.com/templix#plugin-submerge), [attr](http://redcatphp.com/templix#plugin-attr), [attrprepend](http://redcatphp.com/templix#plugin-attrprepend), [attrappend](http://redcatphp.com/templix#plugin-attrappend), [css](http://redcatphp.com/templix#plugin-css), [js](http://redcatphp.com/templix#plugin-js). 
 ```html
 <extend>  
     <main>  
@@ -1236,10 +1236,10 @@ $templix['outsideVar'] = true;
  
 ```html
 <extend "header.xtml">  
-    <append "title"> - Surikat</append>  
+    <append "title"> - RedCat</append>  
 </extend>  
 <extend "footer.xtml">  
-    <prepend "footer">Surikat -</prepend>  
+    <prepend "footer">RedCat -</prepend>  
 </extend>  
             
 ```
@@ -1329,7 +1329,7 @@ $templix['outsideVar'] = true;
 #### img
 
  If src is local, height or with is not defined and the file can be found, height and with attributes will be extracted and added automaticaly for improve browser rendering performances.  
- If [devImg](http://wildsurikat.com/templix#options) options is set to true, it will add a time suffix to avoid browser caching mechanism.
+ If [devImg](http://redcatphp.com/templix#options) options is set to true, it will add a time suffix to avoid browser caching mechanism.
 
 #### include
 
@@ -1351,7 +1351,7 @@ $templix['outsideVar'] = true;
 
 #### js
 
- The js markup can be used everywhere in document, even inside <extend> first level, to add a [$js](http://wildsurikat.com/js-amd) script call to the last script of body. If a [$js](http://wildsurikat.com/js-amd) call which have src to the same url is allready present in <script>, it will not be duplicate. 
+ The js markup can be used everywhere in document, even inside <extend> first level, to add a [$js](http://redcatphp.com/js-amd) script call to the last script of body. If a [$js](http://redcatphp.com/js-amd) call which have src to the same url is allready present in <script>, it will not be duplicate. 
 ```html
 <js script>  
 <js "/path/to/my/script.js">  
@@ -1361,11 +1361,11 @@ $templix['outsideVar'] = true;
 
 #### link
 
- Regular HTML5 <link> markup. If Templix [devCss](http://wildsurikat.com/templix#options) options is set to true, it will add a time suffix to its href to avoid browser caching mechanism
+ Regular HTML5 <link> markup. If Templix [devCss](http://redcatphp.com/templix#options) options is set to true, it will add a time suffix to its href to avoid browser caching mechanism
 
 #### merge
 
- Markup usage of [merge method](http://wildsurikat.com/templix#method-merge). The merge markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will merge its nodes with children nodes of its selector targeted node(s). If an equivalent node allready exists the node will not be added to avoid duplication. 
+ Markup usage of [merge method](http://redcatphp.com/templix#method-merge). The merge markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will merge its nodes with children nodes of its selector targeted node(s). If an equivalent node allready exists the node will not be added to avoid duplication. 
 ```html
 <extend>  
     <merge "body>main">  
@@ -1380,7 +1380,7 @@ $templix['outsideVar'] = true;
 
  The parser not parse the markups inside it excepting pure PHP code. The parser will be turned off until it meet the ending markup <script>. There is a same implemation for the style and script markup. 
 ```html
-class Noparse extends \\Wild\\Templix\\Markup{  
+class Noparse extends \\RedCat\\Templix\\Markup{  
     protected $hiddenWrap = true;  
     protected $noParseContent = true;  
 }  
@@ -1394,7 +1394,7 @@ class Noparse extends \\Wild\\Templix\\Markup{
 
 #### premerge
 
- Markup usage of [premerge method](http://wildsurikat.com/templix#method-premerge). The premerge markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will merge its nodes with children nodes of its selector targeted node(s). If an equivalent node allready exists the node will not be added to avoid duplication. Contrary to merge if the element didn't allready exists, it will be added before and not after existing ones. 
+ Markup usage of [premerge method](http://redcatphp.com/templix#method-premerge). The premerge markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will merge its nodes with children nodes of its selector targeted node(s). If an equivalent node allready exists the node will not be added to avoid duplication. Contrary to merge if the element didn't allready exists, it will be added before and not after existing ones. 
 ```html
 <extend>  
     <premerge "body>main">  
@@ -1425,7 +1425,7 @@ class Noparse extends \\Wild\\Templix\\Markup{
 
 #### remove
 
- Markup usage of [remove method](http://wildsurikat.com/templix#method-remove). The remove markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will remove its selector targeted node(s). 
+ Markup usage of [remove method](http://redcatphp.com/templix#method-remove). The remove markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will remove its selector targeted node(s). 
 ```html
 <extend>  
     <remove "span.some-widget">  
@@ -1458,11 +1458,11 @@ class Noparse extends \\Wild\\Templix\\Markup{
 
 #### script
 
- Regular HTML5 <script> markup, with implicit type="text/javascript" if not defined. If he have src attribute and Templix [devJs](http://wildsurikat.com/templix#options) options is set to true, it will add a time suffix to its src to avoid browser caching mechanism.
+ Regular HTML5 <script> markup, with implicit type="text/javascript" if not defined. If he have src attribute and Templix [devJs](http://redcatphp.com/templix#options) options is set to true, it will add a time suffix to its src to avoid browser caching mechanism.
 
 #### submerge
 
- Markup usage of [submerge method](http://wildsurikat.com/templix#method-submerge). The submerge markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will merge its children nodes with children nodes of its selector targeted node(s). Like in merge, if an equivalent node allready exists the node will not be added to avoid duplication 
+ Markup usage of [submerge method](http://redcatphp.com/templix#method-submerge). The submerge markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will merge its children nodes with children nodes of its selector targeted node(s). Like in merge, if an equivalent node allready exists the node will not be added to avoid duplication 
 ```html
 <extend>  
     <submerge "body>main">  
@@ -1496,7 +1496,7 @@ class Noparse extends \\Wild\\Templix\\Markup{
 
 #### t
 
- The t markup can be used like [vars attribute](http://wildsurikat.com/templix#attr-vars), is transparent and can be used to work with gettext translation and sprintf. 
+ The t markup can be used like [vars attribute](http://redcatphp.com/templix#attr-vars), is transparent and can be used to work with gettext translation and sprintf. 
 ```html
 <?$name = 'Jo';?>  
 <?$lastname = 'Surikat';?>  
@@ -1535,7 +1535,7 @@ class Noparse extends \\Wild\\Templix\\Markup{
 
 #### write
 
- Markup usage of [write method](http://wildsurikat.com/templix#method-write). The write markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will write its content inside its selector targeted node(s), overwrite its inner content. 
+ Markup usage of [write method](http://redcatphp.com/templix#method-write). The write markup have to be used at first level inside <extend> or in "*.tpl*" with apply. It will write its content inside its selector targeted node(s), overwrite its inner content. 
 ```html
 <extend>  
     <write main>  
@@ -1552,23 +1552,23 @@ Custom Plugins
 ### Build your own plugins
 
  To build your own plugins you have to set plugin prefix class path and then make a corresponding prefixed class.  
- You have to extend this class from "*\\Wild\\Templix\\Markup*". Let's take an example: 
+ You have to extend this class from "*\\RedCat\\Templix\\Markup*". Let's take an example: 
 ```php
-$templix->addPluginPrefix('Wild\\Plugin\\Templix\\Markup\\');  
+$templix->addPluginPrefix('RedCat\\Plugin\\Templix\\Markup\\');  
             
 ```
  
 ```html
 <markdown>  
-    # [See Away, Be Lite, Run Fast](http://wildsurikat.com) ![Logo of Surikat](http://wildsurikat.com/img/surikat.png) [SURIKAT](http://wildsurikat.com)  
-    [The essential framework for web developers](http://wildsurikat.com)  
+    # [See Away, Be Lite, Run Fast](http://redcatphp.com) ![Logo of RedCat](http://redcatphp.com/img/redcat.png) [REDCAT](http://redcatphp.com)  
+    [The essential framework for web developers](http://redcatphp.com)  
 </markdown>  
             
 ```
- From *Wild\\Plugin\\Templix\\Markup\\Markdown.php* 
+ From *RedCat\\Plugin\\Templix\\Markup\\Markdown.php* 
 ```php
-namespace Wild\\Plugin\\Templix\\Markup;  
-class Markdown extends \\Wild\\Templix\\Markup {  
+namespace RedCat\\Plugin\\Templix\\Markup;  
+class Markdown extends \\RedCat\\Templix\\Markup {  
     protected $hiddenWrap = true;  
     protected $noParseContent = true;  
     function load(){  
@@ -1603,17 +1603,17 @@ class Markdown extends \\Wild\\Templix\\Markup {
 ```
  
 ```php
-namespace Wild\\Plugin\\Templix\\Markup; //here is the namespace prefix  
-class My\_markup extends \\Wild\\Templix\\Markup {}  
+namespace RedCat\\Plugin\\Templix\\Markup; //here is the namespace prefix  
+class My\_markup extends \\RedCat\\Templix\\Markup {}  
         
 ```
 ### Methods of plugins
 
  The load method of the class is triggered when your markup is closed, by closing markup, self closing or implicit self closed. All DOM which is loaded before is accessible.  
  You can also implements the loaded method which is triggered when the whole document is loaded and so accessible from the method.  
- From the class you can access the attributes of the markup and all DOM with the [markup object methods](http://wildsurikat.com/templix#markup-methods). 
+ From the class you can access the attributes of the markup and all DOM with the [markup object methods](http://redcatphp.com/templix#markup-methods). 
 ```php
-class Mymarkup extends \\Wild\\Templix\\Markup {  
+class Mymarkup extends \\RedCat\\Templix\\Markup {  
     function load(){  
         var\_dump( $this->getAttributes() );  
     }  
@@ -1628,10 +1628,10 @@ class Mymarkup extends \\Wild\\Templix\\Markup {
 ### Special properties of plugins
 
  There are some special properties of markup class that can be overloaded to add special behaviors.  
- The hiddenWrap property, when set to true, tell templix that this markup have no output for its opening tag, closing tag, and so its attributes. Only its head, foot, and inner content will be displayed. Examples of this implemation are [t](http://wildsurikat.com/templix#plugin-t), [noparse](http://wildsurikat.com/templix#plugin-noparse), [vars](http://wildsurikat.com/templix#plugin-style) and all basic [php syntax structural element](http://php.net/manual/en/language.control-structures.php) or markup which will rewrite its content on load.   
- The noParseContent tell to the parser to not parse the markups inside it excepting pure PHP code. The parser will be turned off until it meet the ending markup corresponding to opened noParseContent markup, in this example </mymarkup>. Examples of this implemation are [noparse](http://wildsurikat.com/templix#plugin-noparse), [script](http://wildsurikat.com/templix#plugin-script), [style](http://wildsurikat.com/templix#plugin-style), [code](http://wildsurikat.com/templix#plugin-code), and [pre](http://wildsurikat.com/templix#plugin-pre). 
+ The hiddenWrap property, when set to true, tell templix that this markup have no output for its opening tag, closing tag, and so its attributes. Only its head, foot, and inner content will be displayed. Examples of this implemation are [t](http://redcatphp.com/templix#plugin-t), [noparse](http://redcatphp.com/templix#plugin-noparse), [vars](http://redcatphp.com/templix#plugin-style) and all basic [php syntax structural element](http://php.net/manual/en/language.control-structures.php) or markup which will rewrite its content on load.   
+ The noParseContent tell to the parser to not parse the markups inside it excepting pure PHP code. The parser will be turned off until it meet the ending markup corresponding to opened noParseContent markup, in this example </mymarkup>. Examples of this implemation are [noparse](http://redcatphp.com/templix#plugin-noparse), [script](http://redcatphp.com/templix#plugin-script), [style](http://redcatphp.com/templix#plugin-style), [code](http://redcatphp.com/templix#plugin-code), and [pre](http://redcatphp.com/templix#plugin-pre). 
 ```php
-class Mymarkup extends \\Wild\\Templix\\Markup {  
+class Mymarkup extends \\RedCat\\Templix\\Markup {  
     protected $hiddenWrap = true;  
     protected $noParseContent = true;  
 }  
