@@ -9,6 +9,8 @@ class BeautifyHtml{
 	protected $removeComments = false;
 	protected $openTagsPattern = [];
 	protected $closeTagsPattern = [];
+	protected $openTagsPatternEnd = [];
+	protected $closeTagsPatternEnd = [];
 	protected $indentOpenTagsPattern = '';
 	protected $indentCloseTagsPattern = '';
 	protected static $tagsIndentForce = [

@@ -1430,12 +1430,15 @@ class Markup implements \ArrayAccess,\IteratorAggregate{
 	private function fireCharacterData($text){
 		//if($text)
 			//$node = $this->addToCurrent('TEXT',$text,true);
+		if(!$text)
+			return;
 		if(trim($text)){
 			$node = $this->addToCurrent('TEXT',$text,true);
 		}
 		elseif($this->currentTag){
-			if($node=end($this->currentTag->childNodes))
+			if($node=end($this->currentTag->childNodes)){
 				$node->spaceAfterClose = true;
+			}
 			else
 				$this->currentTag->spaceAfterOpen = true;
 		}
