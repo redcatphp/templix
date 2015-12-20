@@ -48,6 +48,11 @@ class Templix implements \ArrayAccess {
 		$this->devImg = $devImg;
 		
 		$this->setPluginPrefix(self::getPluginPrefixDefault());
+
+		$this->setDirCompile(sys_get_temp_dir().'/templix/compile/');
+		$this->setDirCache(sys_get_temp_dir().'/templix/cache/');
+		$this->setDirSync(sys_get_temp_dir().'/sync/');
+		
 		if(isset($file))
 			$this->setPath($file);
 		if(isset($vars))
