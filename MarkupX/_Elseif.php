@@ -1,6 +1,6 @@
 <?php
 namespace RedCat\Templix\MarkupX; 
-class _Elseif extends \RedCat\Templix\_If {
+class _Elseif extends _If {
 	protected $selfClosed = true;
 	function load(){
 		array_unshift($this->head,'<?php }elseif('.$this->evalSource()."){?>\n");
