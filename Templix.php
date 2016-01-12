@@ -84,6 +84,12 @@ class Templix implements \ArrayAccess {
 		$this->__pluginPrefix = (array)$prefixs;
 	}
 	function addPluginPrefix($prefix,$prepend=true){
+		if(is_array($prefix)){
+			foreach($prefix as $p){
+				$this->addPluginPrefix($p,$prepend);
+			}
+			return;
+		}
 		if($prepend)
 			array_unshift($this->__pluginPrefix,$prefix);
 		else
