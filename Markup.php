@@ -1518,5 +1518,13 @@ class Markup implements \ArrayAccess,\IteratorAggregate{
 			}
 		}
 	}
+	function getAncestor(){
+		$ancestor = $this;
+		do{
+			$ancestor = $ancestor->parent;
+		}
+		while($ancestor->parent);
+		return $ancestor;
+	}
 }
 Markup::initialize();
