@@ -8,12 +8,9 @@ class Css extends \RedCat\Templix\CallerMarkup{
 	var $selector = false;
 	function load(){
 		$this->remapAttr('href');
-		if($this->closest('extend')){
-			$o = $this;
-			$this->closest()->onLoaded(function()use($o){
-				$o->addCssLink();
-			});
-		}
+		$this->closest()->onLoaded(function(){
+			$this->addCssLink();
+		});
 	}
 	function loaded(){
 		$this->addCssLink();
@@ -25,6 +22,8 @@ class Css extends \RedCat\Templix\CallerMarkup{
 		if(!$css)
 			$css = $this;
 		$dom = $this->closest()->children('head',0);
+		if(!$dom)
+			$dom = $this->getAncestor();
 		if(!$dom)
 			return;
 		$href = trim($css->href?$css->href:($css->src?$css->src:key($css->attributes)));
