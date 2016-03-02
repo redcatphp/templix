@@ -109,7 +109,10 @@ class BeautifyHtml{
 				$indentionLevel++;
 		}
 		$buffer = implode("\n",$cleanContent); // write indented lines back to buffer
-		$buffer = str_replace(array_keys($this->tagsToIgnoreBlocks), $this->tagsToIgnoreBlocks, $buffer); // add blocks, which should not be processed
+		do{
+			$buffer = str_replace(array_keys($this->tagsToIgnoreBlocks), array_values($this->tagsToIgnoreBlocks), $buffer, $replaced); // add blocks, which should not be processed
+		}
+		while($replaced);
 		return $buffer;
 	}
 }
