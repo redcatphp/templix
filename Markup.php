@@ -1330,7 +1330,8 @@ class Markup implements \ArrayAccess,\IteratorAggregate{
 							$quoteType = '"';
 						elseif ($quoteType == $currentChar) {
 							$keyDump = trim($keyDump);
-							$attrArray[$keyDump] = trim($valueDump)?$valueDump:'';
+							$tValueDump = trim($valueDump);
+							$attrArray[$keyDump] = $tValueDump||$tValueDump==='0'?$valueDump:'';
 							$keyDump = $valueDump = $quoteType = '';
 							$currentState = self::STATE_ATTR_NONE;
 						}
@@ -1350,7 +1351,8 @@ class Markup implements \ArrayAccess,\IteratorAggregate{
 							$quoteType = "'";
 						elseif ($quoteType == $currentChar){
 							$keyDump = trim($keyDump);
-							$attrArray[$keyDump] = trim($valueDump)?$valueDump:'';
+							$tValueDump = trim($valueDump);
+							$attrArray[$keyDump] = $tValueDump||$tValueDump==='0'?$valueDump:'';
 							$keyDump = $valueDump = $quoteType = '';
 							$currentState = self::STATE_ATTR_NONE;
 						}
