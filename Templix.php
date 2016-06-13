@@ -3,7 +3,7 @@
  * Templix - HTML5 based Template Engine with Recursive Extends and CSS3 Selectors to work on DOM like with Jquery
  *
  * @package Templix
- * @version 1.7
+ * @version 1.8
  * @link http://github.com/redcatphp/Templix/
  * @author Jo Surikat <jo@surikat.pro>
  * @website http://redcatphp.com
@@ -201,7 +201,7 @@ class Templix implements \ArrayAccess {
 		if($autoIndent)
 			ob_start();
 		
-		$this->includeVars($this->dirCompile.$this->dirCompileSuffix.$file,$this->vars);
+		includeVars($this,$this->dirCompile.$this->dirCompileSuffix.$file,$this->vars);
 		
 		if($autoIndent){
 			$buffer = ob_get_clean();
@@ -225,11 +225,6 @@ class Templix implements \ArrayAccess {
 		$this->removeTmp($node);
 		$this->childNodes[] = $node;
 		$this->compilePHP($this->dirCompile.$this->dirCompileSuffix.$file,(string)$node);
-	}
-	function includeVars(){
-		if(func_num_args()>1&&count(func_get_arg(1)))
-			extract(func_get_arg(1));
-		return include(func_get_arg(0));
 	}
 	function setPath($path){
 		$this->path = $path;
@@ -414,4 +409,10 @@ class Templix implements \ArrayAccess {
 			$this->childNodes[$i] = clone $node;
 		}
 	}
+}
+
+function includeVars($templix){
+	if(func_num_args()>2&&count(func_get_arg(2)))
+		extract(func_get_arg(2));
+	return include(func_get_arg(1));
 }

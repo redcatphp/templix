@@ -20,7 +20,7 @@ class Vars extends \RedCat\Templix\Markup{
 			$var = var_export($this->templix->includeVars($file,$this->templix->get()),true);
 		}
 		else{
-			$var = '$this->includeVars("'.str_replace('"','\"',$file).'",get_defined_vars())';
+			$var = 'RedCat\Templix\includeVars($templix,"'.str_replace('"','\"',$file).'",get_defined_vars())';
 		}
 		$head = '<?php ';
 		if(!$this->selfClosed){
