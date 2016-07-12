@@ -43,7 +43,6 @@ class Minify {
 	}
 	private function compressLoopHTML(){
 		$php = false;
-		$html = '';
 		foreach($this->tokens as $t){
 			$text = $t[1];
 			$l = strlen($this->result)-1;
