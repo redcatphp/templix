@@ -13,7 +13,7 @@ class _If extends \RedCat\Templix\Markup{
 	}
 	function extendLoad($extend = null){ #untested
 		if(($extend || ($extend = $this->closest('extend')))
-		&&$this->selector?count($apply->children($this->selector))
+		&&$this->selector?count($extend->children($this->selector))
 			:$this->evalue($this->evalSource()))
 			foreach($this->childNodes as $node)
 				if(method_exists($node,'extendLoad'))
