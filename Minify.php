@@ -143,7 +143,6 @@ class Minify {
             ,[$this, '_removeTextareaCB']
             ,$this->_html);
         // trim each line.
-        // @todo take into account attribute values that span multiple lines.
         $this->_html = preg_replace('/^\\s+|\\s+$/m', '', $this->_html);
         // remove ws around block/undisplayed elements
         $this->_html = preg_replace('/\\s+(<\\/?(?:area|base(?:font)?|blockquote|body'
