@@ -8,6 +8,12 @@ class _Include extends \RedCat\Templix\Markup{
 			return;
 		$this->remapAttr('file');
 		$file = $this->__get('file');
+		
+		if(strpos($file,'$')!==false){
+			$this->dynamicInclude($file);
+			return;
+		}
+		
 		if(!pathinfo($file,PATHINFO_EXTENSION))
 			$file .= '.tml';
 		
@@ -25,6 +31,10 @@ class _Include extends \RedCat\Templix\Markup{
 		$relativity = "__DIR__.'/".addslashes($r)."'";
 		$ln = (!$this->temlix||$this->temlix->devTemplate)?"\n":'';
 		$this->innerHead($ln.'<?php include '.$relativity.';?>'.$ln);
+	}
+	protected function dynamicInclude($var){
+		$this->innerHead('<?php $templix->displayRelative("'.$var.'", get_defined_vars()); ?>');
+		
 	}
 	static function findRelativePath($frompath, $topath){
 		$from = explode('/', $frompath);
