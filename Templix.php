@@ -211,6 +211,17 @@ class Templix implements \ArrayAccess {
 		}
 		return $this;
 	}
+	function displayRelative($file=null,$vars=[]){
+		if(!pathinfo($file,PATHINFO_EXTENSION))
+			$file .= '.tml';
+		$templix = clone $this;
+		$templix->setParent($this);
+		$templix->setPath($file);
+		$templix->onCompile(function($rootNode){
+			$rootNode->setParent($this);
+		});
+		return $templix->display($file, $vars);
+	}
 	
 	function writeCompile(){
 		$file = $this->getPath();
