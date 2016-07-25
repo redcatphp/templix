@@ -215,11 +215,15 @@ class Templix implements \ArrayAccess {
 		if(!pathinfo($file,PATHINFO_EXTENSION))
 			$file .= '.tml';
 		$templix = clone $this;
+		$templix->vars = [];
+		$templix->childNodes = [];
 		$templix->setParent($this);
 		$templix->setPath($file);
 		$templix->onCompile(function($rootNode){
 			$rootNode->setParent($this);
 		});
+		if(isset($vars['templix']))
+			unset($vars['templix']);
 		return $templix->display($file, $vars);
 	}
 	
@@ -417,7 +421,10 @@ class Templix implements \ArrayAccess {
 	}
 	function __clone(){
 		foreach($this->childNodes as $i=>$node){
-			$this->childNodes[$i] = clone $node;
+			$node = clone $node;
+			$this->childNodes[$i] = $node;
+			$node->setParent($this);
+			$node->setTemplix($this);
 		}
 	}
 }
