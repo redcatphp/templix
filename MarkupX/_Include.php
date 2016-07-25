@@ -33,7 +33,7 @@ class _Include extends \RedCat\Templix\Markup{
 		$this->innerHead($ln.'<?php include '.$relativity.';?>'.$ln);
 	}
 	protected function dynamicInclude($var){
-		$this->innerHead('<?php $templix->displayRelative("'.$var.'", get_defined_vars()); ?>');
+		$this->innerHead('<?php $templix->displayRelative("'.$var.'", get_defined_vars(), "'.dirname($this->templix->getPath()).'"); ?>');
 		
 	}
 	static function findRelativePath($frompath, $topath){
