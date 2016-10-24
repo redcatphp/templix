@@ -1205,8 +1205,8 @@ class Markup implements \ArrayAccess,\IteratorAggregate{
 													else
 														$myAttributes[] = $k;
 											}
-											if (strpos($charContainer, '/') !== false) {
-												$charContainer = substr($charContainer, 0, (strrchr($charContainer, '/') - 1));
+											if (false!==$p=strpos($charContainer, '/')) {
+												$charContainer = substr($charContainer, 0, $p);
 												$this->fireElement($charContainer, $myAttributes);
 											}
 											else {
