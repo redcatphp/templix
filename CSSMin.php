@@ -1,5 +1,5 @@
 <?php
-namespace Templix;
+namespace RedCat\Templix;
 
 /*!
  * cssmin.php v2.4.8-5
