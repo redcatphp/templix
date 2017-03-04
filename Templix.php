@@ -206,14 +206,19 @@ class Templix implements \ArrayAccess {
 		if($autoIndent){
 			$buffer = ob_get_clean();
 			$beautify = new Beautify_Html(array(
-			  'indent_inner_html' => false,
-			  'indent_char' => " ",
-			  'indent_size' => 2,
-			  'wrap_line_length' => 32786,
-			  'unformatted' => ['code', 'pre'],
-			  'preserve_newlines' => false,
-			  'max_preserve_newlines' => 32786,
-			  'indent_scripts'  => 'normal' // keep|separate|normal
+				'indent_inner_html' => false,
+				'indent_char' => " ",
+				'indent_size' => 2,
+				'wrap_line_length' => 32786,
+				'unformatted' => [
+					'a', 'span', 'bdo', 'em', 'strong', 'dfn', 'code', 'samp', 'kbd', 'var', 'cite', 'abbr', 
+					'acronym', 'q', 'sub', 'sup', 'tt', 'i', 'b', 'big', 'small', 'u', 's', 'strike', 
+					'font', 'ins', 'del', 'pre', 'address', 'dt', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'
+					,'textarea'
+				],
+				'preserve_newlines' => false,
+				'max_preserve_newlines' => 32786,
+				'indent_scripts'  => 'normal' // keep|separate|normal
 			));
 			$buffer = $beautify->beautify($buffer);
 			echo $buffer;
