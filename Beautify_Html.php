@@ -399,7 +399,8 @@ class Beautify_Html
 				array_splice($content, 0, 0, $this->input[$tag_start - 1]);
 			}
 			$tag_end = $this->pos - 1;
-			if (in_array($this->input[$tag_end + 1], $this->whitespace)) {
+			//if (in_array($this->input[$tag_end + 1], $this->whitespace)) {
+			if (isset($this->input[$tag_end + 1]) && in_array($this->input[$tag_end + 1], $this->whitespace)) { //surikat bugfix
 				$content[] = $this->input[$tag_end + 1];
 			}
 			$this->tag_type = 'SINGLE';
