@@ -1458,6 +1458,10 @@ class Markup implements \ArrayAccess,\IteratorAggregate{
 	function evaluate(){
 		return ob_start()&&eval('?>'.$this)!==false?ob_get_clean():'';
 	}
+	function evalueString(){
+		if(func_num_args()>1) extract(func_get_arg(1));
+		return eval('return "'.func_get_arg(0).'";');
+	}
 	function parse($arg){
 		$this->clear();
 		if(!is_string($arg))
