@@ -32,6 +32,7 @@ class Templix implements \ArrayAccess {
 	public $childNodes = [];
 	public $isXhtml;
 	
+	public $notFoundAlt;
 	public $devTemplate;
 	public $devJs;
 	public $devCss;
@@ -40,12 +41,14 @@ class Templix implements \ArrayAccess {
 	public $autoIndent;
 	
 	function __construct($file=null,$vars=null,
-		$devTemplate=true,$devJs=true,$devCss=true,$devImg=false
+		$devTemplate=true,$devJs=true,$devCss=true,$devImg=false,$notFoundAlt=null
 	){
 		$this->devTemplate = $devTemplate;
 		$this->devCss = $devCss;
 		$this->devJs = $devJs;
 		$this->devImg = $devImg;
+		
+		$this->notFoundAlt = $notFoundAlt;
 		
 		$this->setPluginPrefix(self::getPluginPrefixDefault());
 
@@ -180,15 +183,26 @@ class Templix implements \ArrayAccess {
 				call_user_func($this->cleanCallback,$this);
 		}
 	}
+	function setNotFoundAlt($file){
+		$this->notFoundAlt = $file;
+	}
 	function fetch($file=null,$vars=[]){
 		ob_start();
 		$this->display($file,$vars);
 		return ob_get_clean();
 	}
-	function display($file=null,$vars=[]){
+	function display($file=null,$vars=[],$notFoundAlt=null){
 		if(isset($file))
 			$this->setPath($file);
 		$file = $this->getPath();
+		if(isset($notFoundAlt)){
+			$this->notFoundAlt = $notFoundAlt;
+		}
+		if(!$file&&$this->notFoundAlt){
+			$this->setPath($this->notFoundAlt);
+			$file = $this->getPath();
+			http_response_code(404);
+		}
 		if(!$file)
 			throw new TemplixException('<display "'.$this->path.'"> template not found ');
 		if(!empty($vars))
