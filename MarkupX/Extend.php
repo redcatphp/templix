@@ -7,10 +7,16 @@ class Extend extends \RedCat\Templix\Markup{
 	protected $hiddenWrap = true;
 	var $_extender;
 	var $_extended;
+	
 	function load(){
 		$this->remapAttr('file');
 		if(!isset($this->file))
 			$this->file = '';
+
+		if(strpos($this->file,'$')!==false){
+			$this->file = $this->evalueString($this->file, $this->templix->get());
+		}
+		
 		if(!pathinfo($this->file,PATHINFO_EXTENSION))
 			$this->file .= '.xtml';
 		if(!$this->_extended){
@@ -37,4 +43,5 @@ class Extend extends \RedCat\Templix\Markup{
 			}					
 		}
 	}
+	
 }
