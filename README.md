@@ -1,4 +1,6 @@
- Templix
+**No longer actively maintained. I work now with NodeJS and I recommand you to take a look at [ReactJS](https://reactjs.org/), [Next.JS](https://github.com/zeit/next.js/) and [EJS](https://ejs.co/)**
+
+Templix
 ========
 
  Templix is a powerfull markup syntax based template engine.  
